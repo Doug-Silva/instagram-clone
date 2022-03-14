@@ -1,6 +1,6 @@
-var crl = document.getElementById('myCrl').getContext('2d');
-var crl1 = document.getElementById('myCrl1').getContext('2d');
-var crl2 = document.getElementById('myCrl2').getContext('2d');
+let crl = document.getElementById('myCrl').getContext('2d');
+let crl1 = document.getElementById('myCrl1').getContext('2d');
+let crl2 = document.getElementById('myCrl2').getContext('2d');
 
 crl.beginPath();
 crl.arc(60, 100, 40, 0, 2 * Math.PI);
