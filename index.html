@@ -7,6 +7,13 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+        <!-- Icones -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
         <!-- CSS -->
         <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 
@@ -14,11 +21,117 @@
         <link rel="shortcut icon" type="imagem/x-icon" href="./assets/img/favicon.ico">
 
         <!-- Título da página -->
-        <title>Instagram Clone</title>
+        <title>Douglas Silva @doug_s_silva</title>
     </head>
 
-    <body>
-        <h1>Teste</h1>
-        <h2>Teste</h2>
+    <body class="body">
+
+        <!-- Nav -->
+        <header>
+            <nav class="navbar navbar-light nav-top">
+                <div class="container-fluid nav-container">
+                    <a class="navbar-brand" href="https://github.com/Doug-Silva/instagram-clone" target="_blank">
+                        <img src="./assets/img/logo.jpg" style=" max-width:130px; max-height:80px">
+                    </a>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
+                    </form>
+                    <div style="width: 30%;">
+                        <i class="bi bi-house-door icons"></i>
+                        <i class="bi bi-inbox icons"></i>
+                        <i class="bi bi-compass icons"></i>
+                        <i class="bi bi-heart icons"></i>
+                        <img class="img-nav" src="./assets/img/foto-instagram.jpg">
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Main -->
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-0 col-md-2"></div>
+                    <div class="col-12 col-md-8">
+
+                        <!-- Profile -->
+                        <div class="container">
+                            <div class="row" style="padding-top: 20px;">
+
+                                <div class="col-3">
+                                    <img class="img-profile" src="./assets/img/foto-instagram.jpg" alt="imagem-perfil">
+                                </div>
+
+                                <div class="col-7">
+                                    <div class="row" style="padding-top: 20px; padding-bottom: 10px;">
+                                        <div class="col-8 col-lg-5">
+                                            <h2 class="username">doug_s_silva</h2>
+                                        </div>
+                                        <div class="col-4 col-lg-6">
+                                            <button type="button" class="btn btn-outline-secondary button-edit">Editar perfil</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-4">
+                                            <p class="profile-datas"><strong>7</strong> publicações</p>
+                                        </div>
+                                        <div class="col-4">
+                                            <p class="profile-datas"><strong>118</strong> seguidores</p>
+                                        </div>
+                                        <div class="col-4">
+                                            <p class="profile-datas"><strong>32</strong> seguindo</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <h1 class="name">Douglas Silva</h1>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <p class="profile-desc">Front-End | Developer</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-2"></div>  
+
+                            </div>
+                        </div>
+
+                        <!-- Stories -->
+                        <div style="padding-top: 0px;">
+                            <div class="row">
+                                <div class="col-2"> <canvas id="myCrl"></canvas></div>
+                                <div class="col-2"> <canvas id="myCrl1"></canvas></div>
+                                <div class="col-2"> <canvas id="myCrl2"></canvas></div>
+                            </div>
+                        </div>
+
+                        <div style="padding-bottom: 40px;">
+                            <div class="row">
+                                <div class="col-2 stories"> Checklist</div>
+                                <div class="col-2 stories"> Youtube</div>
+                                <div class="col-2 stories"> Developer</div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="col-0 col-md-2"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- JavaScript -->
+        <script type="text/javascript" src="./assets/js/canvas-script.js"></script>
+
+        <!-- Bootstrap Bundle With Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous">
+        </script>
+        
     </body>
 </html>
